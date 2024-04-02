@@ -1,3 +1,19 @@
+/* General */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Header */
 nav {
   display: flex;
   justify-content: space-between;
@@ -6,15 +22,36 @@ nav {
 nav a {
   color: #1d2830;
   text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -1.06px;
 }
 nav a span {
   color: #794cff;
 }
-.menu img {
-  display: block;
-  margin: 0 auto;
-}
-
 .menu span {
+  display: block;
+  margin-top: 6px;
+  color: #4e5a65;
   text-transform: uppercase;
+  font-weight: 400;
+  font-size: 8px;
+}
+/* Hero */
+.hero {
+  margin-top: 66px;
+  margin-bottom: 56.72px;
+  text-align: center;
+}
+.price {
+  margin: 0;
+  padding: 4px 16px;
+  background-color: #f2f9eb;
+  border: 0;
+  border-radius: 100px;
+
+  color: #35414b;
+  font-weight: 400;
+  font-size: 13px;
 }
