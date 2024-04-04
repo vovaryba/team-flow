@@ -44,13 +44,13 @@ nav a span {
   font-weight: 400;
   font-size: 8px;
 }
-
-/* Hero */
-.hero {
+main {
   margin-top: 66px;
-  margin-bottom: 56.72px;
+  margin-bottom: 56px;
   text-align: center;
 }
+
+/* Hero */
 .price {
   margin: 0;
   padding: 4px 16px;
@@ -143,7 +143,6 @@ h1 {
 .advantages_list {
   margin-top: 25px;
   padding-left: 0;
-  text-align: center;
 }
 .advantages_list li:not(:last-child) {
   border-bottom: 1px solid #f0ebfa;
@@ -198,7 +197,6 @@ h1 {
 /* Work */
 .work {
   margin: 56px 46px;
-  text-align: center;
 }
 .work h2 {
   margin: 0;
@@ -242,10 +240,10 @@ h1 {
   font-size: 16px;
   font-weight: 500;
 }
+
 /* Adapt */
 .adapt {
   padding: 32px 15px;
-  text-align: center;
   border-top: 1px solid #f0ebfa;
   border-bottom: 1px solid #f0ebfa;
   background-color: #fbfafe;
@@ -281,4 +279,96 @@ h1 {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
+}
+
+/* Reviews */
+.reviews {
+  margin: 56px 39px;
+}
+.reviews img {
+  margin: 0 auto;
+}
+.reviews h2 {
+  margin: 0;
+  color: #35414b;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.review_text {
+  margin: 40px 0 0 0;
+  color: #4e5a65;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.78;
+}
+.customer {
+  margin-top: 40px;
+}
+.customer h3 {
+  margin: 9px 0 0 0;
+  color: #4e5a65;
+  font-size: 13px;
+  font-weight: 600;
+}
+.customer p {
+  margin: 8px 0 0 0;
+  color: #4e5a65;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* App */
+.app {
+  padding: 32px 46px;
+  background-color: #796eff;
+}
+.app h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.app_download {
+  margin-top: 32px;
+}
+.app img {
+  margin: 0 auto;
+}
+.google-play {
+  display: inline-block;
+}
+.app-store {
+  display: inline-block;
+  margin-top: 25px;
+}
+/* Footer */
+footer {
+  background-color: #1d2830;
+}
+.top-footer {
+  padding: 48px 46px 56px;
+}
+.top-footer h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.footer_app img {
+  margin-top: 16px;
+}
+.rights {
+  margin: 0;
+  padding: 32px 46px;
+  color: #d9dbe1;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  font-weight: 400;
 }
