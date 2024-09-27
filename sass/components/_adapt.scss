@@ -1,0 +1,43 @@
+.adapt {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 1px solid $dividing-line-color;
+  border-bottom: 1px solid $dividing-line-color;
+  background-color: $primary-bg-color;
+
+  img {
+    margin: 0 auto;
+  }
+}
+.adapt-container {
+  text-align: center;
+}
+.get-started {
+  margin: 32px 33px 0;
+
+  h2 {
+    margin: 0;
+    color: $secondary-text-color;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+  }
+  p {
+    margin: 16px 0 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  button {
+    @extend %button;
+    width: 100%;
+    margin-top: 16px;
+    background-color: $tertiary-bg-color;
+    color: $tertiary-text-color;
+
+    &:hover {
+      background-color: $button-bg-color;
+      color: $button-color;
+    }
+  }
+}

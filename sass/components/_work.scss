@@ -1,0 +1,52 @@
+.work {
+  padding-top: 56px;
+  padding-bottom: 56px;
+
+  h2 {
+    margin: 0;
+    color: $secondary-text-color;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  button {
+    @extend %button;
+    width: 100%;
+    margin-top: 40px;
+    padding: 18px;
+    background-color: $button-bg-color;
+    color: $button-color;
+
+    &:hover {
+      background-color: $secondary-bg-color;
+      color: $tertiary-text-color;
+    }
+  }
+}
+.work-container {
+  padding-left: 48px;
+  padding-right: 48px;
+  text-align: center;
+}
+.work_list {
+  margin: 40px 0 0 0;
+  padding: 0;
+
+  li:not(:first-child) {
+    margin-top: 48px;
+  }
+  img {
+    margin: 0 auto;
+  }
+  h3 {
+    margin: 16px 0 0 0;
+    color: $secondary-text-color;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  p {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}

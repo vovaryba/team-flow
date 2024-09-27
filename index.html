@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>TeamFlow</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -14,16 +14,58 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+	 <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
       <div class="container">
         <nav>
-          <a href="">team<span>.</span>flow</a>
-          <div class="menu">
-            <img src="img/menu.svg" width="24" />
+          <a href="" class="logo">team<span class="logo-dot">.</span>flow</a>
+          <button type="button" class="open-menu-btn">
+				<svg class="open-menu-btn-icon">
+					<use href="img/sprite.svg#menu"></use>
+				</svg>
             <span>menu</span>
+          </button>
+          <div class="backdrop-menu">
+            <div class="menu-container">
+              <button class="close-menu-btn">
+						<svg class="close-menu-btn-icon">
+							<use href="img/sprite.svg#close"></use>
+						</svg>
+              </button>
+              <div class="login">
+                <a href="">Log in</a>
+                <button>Get started free</button>
+              </div>
+              <ul>
+                <li>
+                  <a href="" class="menu-link">
+							How it Works
+							<svg class="menu-link-icon">
+								<use href="img/sprite.svg#arrow-down"></use>
+							</svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">
+							Product 
+							<svg class="menu-link-icon">
+								<use href="img/sprite.svg#arrow-down"></use>
+							</svg>
+                  </a>
+                </li>
+                <li><a href="" class="menu-link">Pricing</a></li>
+                <li>
+                  <a href="" class="menu-link">
+							Resources 
+						  <svg class="menu-link-icon">
+								<use href="img/sprite.svg#arrow-down"></use>
+							</svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -32,7 +74,10 @@
       <section class="hero">
         <div class="container hero-container">
           <button class="price" type="button">
-            Get account of $59 <img src="img/arrow-right.svg" />
+            Get account of $59 
+				<svg class="price-icon">
+					<use href="img/sprite.svg#arrow-right"></use>
+				</svg>
           </button>
 
           <div class="team">
@@ -231,17 +276,23 @@
         <div class="container footer-container">
           <div class="list">
             <h3>Company</h3>
-            <img src="img/arrow-down.svg" alt="" width="16" />
+				<svg class="list-icon">
+					<use href="img/sprite.svg#arrow-down"></use>
+				</svg>
           </div>
 
           <div class="list">
             <h3>Support</h3>
-            <img src="img/arrow-down.svg" alt="" width="16" />
+				<svg class="list-icon">
+					<use href="img/sprite.svg#arrow-down"></use>
+				</svg>
           </div>
 
           <div class="list">
             <h3>Legal</h3>
-            <img src="img/arrow-down.svg" alt="" width="16" />
+				<svg class="list-icon">
+					<use href="img/sprite.svg#arrow-down"></use>
+				</svg>
           </div>
 
           <div class="footer_app">
@@ -260,8 +311,9 @@
         </div>
       </div>
       <div class="container">
-        <div class="rights">© 2020 - All rights reserved</div>
+        <div class="rights">&#169 2024 - All rights reserved</div>
       </div>
     </footer>
+    <script src="/menu.js" type="module"></script>
   </body>
 </html>

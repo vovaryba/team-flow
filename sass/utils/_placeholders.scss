@@ -1,0 +1,10 @@
+%button {
+  min-height: 52px;
+  padding: 18px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+}

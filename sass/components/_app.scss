@@ -1,0 +1,31 @@
+.app {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $tertiary-bg-color;
+
+  h3 {
+    margin: 0;
+    color: $tertiary-text-color;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33;
+  }
+  img {
+    margin: 0 auto;
+  }
+}
+.app-container {
+  padding-right: 46px;
+  padding-left: 46px;
+  text-align: center;
+}
+.app_download {
+  margin-top: 32px;
+}
+.google-play {
+  display: inline-block;
+}
+.app-store {
+  display: inline-block;
+  margin-top: 25px;
+}

@@ -1,0 +1,40 @@
+.reviews {
+  padding-top: 56px;
+  padding-bottom: 56px;
+
+  img {
+    margin: 0 auto;
+  }
+  h2 {
+    margin: 0;
+    color: $secondary-text-color;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+  }
+}
+.reviews-container {
+  padding-left: 39px;
+  padding-right: 39px;
+  text-align: center;
+}
+.review_text {
+  margin: 40px 0 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.78;
+}
+.customer {
+  margin-top: 40px;
+
+  h3 {
+    margin: 9px 0 0 0;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  p {
+    margin: 8px 0 0 0;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}

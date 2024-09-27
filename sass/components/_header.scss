@@ -1,0 +1,137 @@
+header {
+  padding-top: 32px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  color: $logo-color;
+  font-family: $logo-font;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -1.06px;
+}
+.logo-dot {
+  color: $secondary-bg-color;
+}
+.open-menu-btn {
+  padding: 0;
+  border: 0;
+  background-color: $tertiary-text-color;
+  cursor: pointer;
+
+  span {
+    display: block;
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 8px;
+  }
+}
+.open-menu-btn-icon {
+  width: 24px;
+  height: 16px;
+  fill: $secondary-text-color;
+}
+.backdrop-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backdrop-menu-color;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 250ms $cubic-bezier;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+.menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 253px;
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 32px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: $tertiary-text-color;
+  transform: translateX(100%);
+  transition: transform 250ms $cubic-bezier;
+
+  .backdrop-menu.is-open & {
+    transform: translateX(0);
+  }
+}
+.close-menu-btn {
+  align-self: flex-end;
+  width: 24px;
+  padding: 0;
+  border: 0;
+  background-color: $tertiary-text-color;
+  cursor: pointer;
+}
+.close-menu-btn-icon {
+  width: 24px;
+  height: 24px;
+  fill: $secondary-text-color;
+}
+.login {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    padding: 18px 18px 18px 0;
+    color: #35414b;
+    font-size: 16px;
+    font-weight: 400;
+
+    &:hover {
+      font-weight: 500;
+    }
+  }
+  button {
+    @extend %button;
+    background-color: $button-bg-color;
+    color: $button-color;
+
+    &:hover {
+      background-color: $secondary-bg-color;
+      color: $tertiary-text-color;
+    }
+  }
+}
+.menu-container ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.menu-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $secondary-text-color;
+  font-size: 16px;
+  font-weight: 400;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
+.menu-link-icon {
+  width: 8px;
+  height: 5px;
+  margin-left: 4px;
+  fill: currentColor;
+}
